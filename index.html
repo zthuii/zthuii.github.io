@@ -1,69 +1,365 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="Author" content="Noah">
-    <meta name="Keywords" content="">
-    <meta name="Description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="favicon" href="favicon.ico">
-    <title>资源技术集中营</title>
-    <style>@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.eot?t=1584846914425);src:url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.eot?t=1584846914425#iefix) format('embedded-opentype'),url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPcAAsAAAAACEAAAAOQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDVIMaATYCJAMUCwwABCAFhG0HUhswBxEVnPHIfiZkcgn7O+8oo66bEbK2OpSJxjfBA+X1vslMtll8iBW0KuzdSry1J/JGpwASAA0EaO7O95urXT4WOkKV5Nojj7b4hwrpy2SO/v97p78xLfvYuvYslzWHLex8DDAOpEDHnGQljg3TC+cUPEjbIQAHqRRD1GvQzI2BgvQTgBjYr083jJQNVcMRGEZbyVSVKhajY2hztCvAIv178YYywgANXUJ2atW7fk9qmZi1ZMCSjnILC8fbDUAHJFAMUCCGl/oGIm2uGBKHP1RRC3BgoKGZmLxVUbOWZcWqHRkc9A8PBBKFBsIGKXUBUAvlFZhwBAGmhiDBLIqgwKyVRwPuKwAOWAjCWUxL9mpIWOWKcikVmuwiF0+49sx9/bnn5gvfDdO/at6eQHTP5dHLd8Z6V67btSPG061Q523w0S5OzYETx4QbT9zXbnmuP/bdvOsL9lwR2D031utePndvMM7nXRncNy/G4xvlEveE69fc4Tdu+AbcnOdxa4E98/bFyZV75+5WxGRRnfY0cEulpaqbVCzNtxTEU1P1m2J4tFGwJ7VcytpevcrWOXd44oCjAyZu3DXRvQxryi09PV2/BcVQIlRxZPWvAFhMXkb1qQ3bHPFvOVXxWI1TjTLPFjtT5smFsAtxVqK82CcvekwcsbMOHDh4wOBxYw4eZI+NVR+A6Vmx4bGz1ZI0XFw1r0mlXm20lW5RpWd+s0u/ijYZwarmHJsZVi+tXKjMlU2rm186Hlk6tFxaPfwAWLPk3380K2u4Qm6xtmaprTL4b/dj0Nu/F+qwat8MpwLgzvpfdbSsPbbVBj9Ijy//kxa1tAb7qAqUxK4rT8490qpVpxGATiESBDT4aTX/LxTJg3H0MbPIZMAgJgaNIqSAxCCbpGjFQMdJObBhUBMcFKXhbCdRDEcilB0oZAYAQTiHQCOU4yAJ5ypJ0e6DTizvwEa4kODAK6KWdJIrLP1uHgWtYqDuj3zPi2FOvTHlb7BpaiWp1NwvSPRJKrMiW3zFAhljRPy2laohIzzTC9gN08S0Cgf0mjnV9ZLnpuxDWc/z5oZHQasYqPsj3/NiZGO9yX3/DTZNrdQQ+qJfkOjbpzIrWpBedUsrwrXcEr9tpWrICM/0AjyYaI5pLe8U0GvmemTWS47qmba6bH7D/IybAAdkZV1oQgoldGHjYViCYPl3WKxb86g+On/sE/+kc/CLtS1vNg==') format('woff2'),url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.woff?t=1584846914425) format('woff'),url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.ttf?t=1584846914425) format('truetype'),url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.svg?t=1584846914425#iconfont) format('svg')}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-querenzhengque:before{content:"\e600"}.icon-tishi:before{content:"\e640"}.icon-cuowu:before{content:"\e602"}.icon-jinggao:before{content:"\e62b"}*{box-sizing:border-box;margin:0;padding:0;font-weight:300}body,body ::-webkit-input-placeholder{font-family:Source Sans Pro,sans-serif;color:#fff;font-weight:300}body :-moz-placeholder,body ::-moz-placeholder{font-family:Source Sans Pro,sans-serif;color:#fff;opacity:1;font-weight:300}body :-ms-input-placeholder{font-family:Source Sans Pro,sans-serif;color:#fff;font-weight:300}a{text-decoration:none}.wrapper{background: #01a982; background: linear-gradient(to bottom right,#01a982 0,#60ae80 100%); overflow: hidden;}.bg-bubbles,.wrapper{position:absolute;left:0;width:100%;height:100%}.bg-bubbles{top:0;z-index:1}.bg-bubbles li{position:absolute;list-style:none;display:block;width:40px;height:40px;background-color:hsla(0,0%,100%,.15);bottom:-160px;animation:square 25s infinite;transition-timing-function:linear}.bg-bubbles li:nth-child(1){left:10%}.bg-bubbles li:nth-child(2){left:20%;width:80px;height:80px;animation-delay:2s;animation-duration:17s}.bg-bubbles li:nth-child(3){left:25%;animation-delay:4s}.bg-bubbles li:nth-child(4){left:40%;width:60px;height:60px;animation-duration:22s;background-color:hsla(0,0%,100%,.25)}.bg-bubbles li:nth-child(5){left:70%}.bg-bubbles li:nth-child(6){left:80%;width:120px;height:120px;animation-delay:3s;background-color:hsla(0,0%,100%,.2)}.bg-bubbles li:nth-child(7){left:32%;width:160px;height:160px;animation-delay:7s}.bg-bubbles li:nth-child(8){left:55%;width:20px;height:20px;animation-delay:15s;animation-duration:40s}.bg-bubbles li:nth-child(9){left:25%;width:10px;height:10px;animation-delay:2s;animation-duration:40s;background-color:hsla(0,0%,100%,.3)}.bg-bubbles li:nth-child(10){left:90%;width:160px;height:160px;animation-delay:11s}@keyframes square{0%{transform:translatey(0)}to{transform:translatey(-700px) rotate(600deg)}}@media (max-width:500px){.container h1{font-size:60px}form button,form input{width:500px}}.main{padding:50px 0;z-index:999;position:relative}.main h1{font-size:40px;text-align:center;color:#fff;margin-bottom:30px;text-transform:uppercase}.content{margin:0 auto;width:28%;background:#fff;border-radius:5px}p.footer{font-size:16px;text-align:center;color:#fff;font-weight:500;margin-top:30px}p.footer a{color:#55acee}p.footer a:hover{color:#000;transition:.5s all;-webkit-transition:.5s all;-moz-transition:.5s all;-o-transition:.5s all;-ms-transition:.5s all}.content-top h2{font-size:22px;color:#fff;text-align:center;background:#02a982;padding:12px 0;border-radius:5px}.content-top p{text-align:center;font-size:16px;color:#000;margin-top:15px}.content-top ul li{display:block;font-size:15px;color:#000;line-height:1.8em;padding:1em 0 1em 1em;border-bottom:1px solid #e2e0de}.content-top ul li a{color:#000;font-weight:400}.content-top ul li a i{color:#02a982;font-style:normal;display:block;margin:2px 0}.content-top ul li span{display:block;color:#999}.content-top{padding:1.5em}.content-top p a{color:#55acee;margin-left:5px}@media (max-width:1366px){.content{width:31%}}@media (max-width:1280px){.content{width:32%}}@media (max-width:1080px){.content{width:38%}.main h1{font-size:36px}.content-top h2{font-size:20px;padding:10px 0}.content-top p,.content-top ul li,p.footer{font-size:14px}}@media (max-width:800px){.main h1{font-size:34px}.content{width:46%}}@media (max-width:768px){.main{padding:90px 0}.main h1{margin-bottom:55px}p.footer{margin-top:75px}}@media (max-width:736px){.main{padding:70px 0}.main h1{margin-bottom:45px}.content{width:53%}p.footer{margin-top:50px}}@media (max-width:667px){.main h1{font-size:32px;margin-bottom:35px}.main{padding:60px 0}.content{width:57%}.content-top h2{font-size:18px}}@media (max-width:600px){.main h1{font-size:30px}.content-top{padding:1em}.content{width:62%}}@media (max-width:568px){.content{width:68%}}@media (max-width:480px){.content{width:78%}.main h1{font-size:28px}p.footer{margin-top:42px}}@media (max-width:414px){.content-top h2{font-size:16px}.content{width:85%}.main{padding:50px 0}p.footer{line-height:1.8em;margin:42px auto 0;width:85%}}@media (max-width:384px){.main h1{font-size:27px}.content,p.footer{width:90%}p.footer{margin:32px auto 0}}@media (max-width:375px){.main h1{font-size:26px;margin-bottom:25px}.main{padding:45px 0}.content,p.footer{width:92%}.content-top h2{padding:8px 0}}@media (max-width:320px){.main h1{font-size:24px;margin-bottom:30px}.content-top ul li{padding:1em 0 1em 1em;background-size:13%!important}.content-top{padding:1.2em}.content-top p,.content-top ul li,p.footer{font-size:13px}.content,p.footer{width:90%}}@media(max-width:500px){.bg-bubbles, .wrapper{height:auto;}}</style>
-</head>
-<body >
-    <div id="all">
-        <div class="wrapper">
-            <div class="main">
-				<h1>地址发布页</h1>
-				<div class="content">
-					<div class="content-top">				
-							<h2>请 Ctrl+D 收藏本页到浏览器收藏夹</h2>
-							<ul>
-								<li>
-									预留发布网址
-									<a href="https://www.thui.top" target="_blank"><i>www.thui.top</i></a>
-									
-								</span></span></li>
-								<li>
-									预留发布网址
-									<a href="https://www.thui.top" target="_blank"><i>www.thui.top</i></a>
-									
-								</span></span></li>
-								<li>
-									预留发布网址
-									<a href="https://www.thui.top" target="_blank"><i>www.thui.top</i></a>
-									
-								</span></span></li>
-								<li>
-									预留发布网址
-									<a href="http://www.thui.top" target="_blank"><i>www.thui.top</i></a>
-									
-								</span></span></li>
-								<li>
-									预留发布网址
-									<a href="https://www.thui.top" target="_blank"><i>www.thui.top</i></a>
-								</span></span></li>
-							</ul>
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>WaitAyaka - 在抵达安宁之前加油吧!</title><meta name="author" content="WaitAyaka"><meta name="copyright" content="WaitAyaka"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="我的荣幸">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WaitAyaka">
+<meta property="og:url" content="https://waitayaka.github.io/index.html">
+<meta property="og:site_name" content="WaitAyaka">
+<meta property="og:description" content="我的荣幸">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://waitayaka.github.io/img/avatar.jpg">
+<meta property="article:author" content="WaitAyaka">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://waitayaka.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/avatar.jpg"><link rel="canonical" href="https://waitayaka.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":30,"languages":{"author":"作者: WaitAyaka","link":"链接: ","source":"来源: WaitAyaka","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'WaitAyaka',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-05-14 12:56:43'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-							
-					</div>
-				</div>
-				<p class="footer" color="red">© 2020-2022 <a href="http://blog.thui.top">zhaotenghui</a>. All Rights Reserved  <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2020046964号</a></p>
-			</div>	
-            <ul class="bg-bubbles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </div>
-	<div style='display:none'><script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278893351&web_id=1278893351"></script></div>
-</body>
-</html>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2264842_b004iy0kk2b.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/Tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/Categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时光机</span></a></div><div class="menus_item"><a class="site-page" href="/Tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/1275964.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">WaitAyaka</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时光机</span></a></div><div class="menus_item"><a class="site-page" href="/Tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">WaitAyaka</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://space.bilibili.com/390642502?spm_id_from=333.1007.0.0" target="_blank" title=""><i class="fab fa-bilibili"></i></a><a class="social-icon" href="https://v.douyin.com/iYqN815X/" target="_blank" title=""><i class="fab fa-tiktok"></i></a><a class="social-icon" href="https://qm.qq.com/q/KEhRmXufya" target="_blank" title=""><i class="fab fa-qq"></i></a><a class="social-icon" href="https://github.com/WaitAyaka/waitayaka.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2187988995@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2024/05/14/2022%E5%B9%B4%E4%B8%AD%E8%81%8C%E7%BB%84%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E9%99%A2%E6%A0%A1%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%B5%9B%E9%A1%B9%EF%BC%88%E4%BA%A4%E6%8D%A2%E8%A7%A3%E6%B3%95%EF%BC%89/" title="2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/1297318.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/05/14/2022%E5%B9%B4%E4%B8%AD%E8%81%8C%E7%BB%84%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E9%99%A2%E6%A0%A1%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%B5%9B%E9%A1%B9%EF%BC%88%E4%BA%A4%E6%8D%A2%E8%A7%A3%E6%B3%95%EF%BC%89/" title="2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）">2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-14T04:54:22.000Z" title="发表于 2024-05-14 12:54:22">2024-05-14</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/05/14/2022%E5%B9%B4%E4%B8%AD%E8%81%8C%E7%BB%84%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E9%99%A2%E6%A0%A1%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%B5%9B%E9%A1%B9%EF%BC%88%E4%BA%A4%E6%8D%A2%E8%A7%A3%E6%B3%95%EF%BC%89/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法） 三、交换配置1.配置vlan，SW1、SW2、SW3、AC1的二层链路只允许相应vlan通过。
+
+首先按照题目中端口与vlan对应表进行划分SW1,SW2,SW3:Interface Ethernet1/0/1 switchport access vlan 10!Interface Ethernet1/0/2 switchport access vlan 20!Interface Ethernet1/0/3 switchport access vlan 30!Interface Ethernet1/0/4 switchport access vlan 40!Interface Ethernet1/0/5 switchport access vlan 50!Interface Ethernet1/0/6 switchport access vlan 60!Interface Ethernet1/0/7 switchport access vlan 70!Interface Ethernet1/0/8 switchport ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/04/30/Docker%E6%95%99%E7%A8%8B/" title="Docker教程"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/docker.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/Docker%E6%95%99%E7%A8%8B/" title="Docker教程">Docker教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-30T06:48:51.000Z" title="发表于 2024-04-30 14:48:51">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/Docker/">Docker</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/Docker/">Docker</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/Kubernetes/">Kubernetes</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/30/Docker%E6%95%99%E7%A8%8B/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">*DockerDocker为什么会出现？
+一款产品：开发—上线 两套环境！应用环境，应用配置！
+
+开发  —-  运维   问题：我在我的电脑上可以运行！版本更新，导致服务不可用！对于运维来说，考验就十分大？
+开发即运维
+环境配置十分麻烦，每一个机器都要部署环境（集群Redis，ES，Hadoop……），费时费力。
+
+那么项目能不能带上环境一起安装呢
+
+Docker通过隔离机制，可以将服务器利用到极致
+本质：所有的技术因为出现了一些问题，我们需要去解决，才去学习。
+Docker的历史2010年，几个搞IT的年轻人，就在美国成立了一家公司 dotCloud做一些pass的云计算服务！
+我们将自己的技术（容器化技术）命名 就是docker！
+Docker刚刚诞生的时候，没有引起行业的注意！
+
+开源
+
+开发源代码
+2013年，Docker开源
+Docker越来越多的人发现了Docker的优点，Docker每个月都会更新一个版本
+2014年四月，Docker1.0发布
+Docker为什么这么火呢，因为它相对于一个虚拟机来说，它非常轻。
+
+在容器技术出来之前，我们都是使用的虚拟机技术。
+虚拟机： ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/04/30/Postfix-Dovecot%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%B7%E9%A2%98/" title="Postfix&amp;Dovecot邮件服务器样题"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ChinaSkills.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Postfix&amp;Dovecot邮件服务器样题"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/Postfix-Dovecot%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%B7%E9%A2%98/" title="Postfix&amp;Dovecot邮件服务器样题">Postfix&amp;Dovecot邮件服务器样题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-30T06:42:44.000Z" title="发表于 2024-04-30 14:42:44">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/postfix/">postfix</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/30/Postfix-Dovecot%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%B7%E9%A2%98/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">1.配置 linux5 为 mail 服务器，安装 postfix 和 dovecot。 2.仅支持 smtps 和 pop3s 连接。 3.创建用户 mail1 和 mail2，向 all@skills.com 发送的邮件，每个用户都会收到。 4.使用 s-nail 在本机进行测试。
+
+
+安装相关软件包
+
+yum install -y postfix* dovecot* s-nail
+
+/etc/postfix/master.cf
+
+vim /etc/postfix/master.cf 16 #tlsproxy  unix  -       -       n       -       0       tlsproxy 17 submission inet n       -       n       -       -       smtpd 18   -o syslog_name=postfix/submission 19   -o smtpd_tls_security_level=encrypt 20   -o smtpd_sasl_auth_enable=yes 21   ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/04/30/Github/" title="Hexo搭建博客 Github"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/hexo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo搭建博客 Github"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/Github/" title="Hexo搭建博客 Github">Hexo搭建博客 Github</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-30T06:41:37.000Z" title="发表于 2024-04-30 14:41:37">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/Hexo/">Hexo</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Hexo/">Hexo</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/Github/">Github</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/30/Github/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">搭建Hexo静态博客一、注册Github账号https://www.bilibili.com/video/BV1784y1d7df/?spm_id_from=333.337.search-card.all.click&amp;vd_source=533916b955e102311f934c822ec0d801
+二、 安装前置软件包
+Git https://git-scm.com/download/win
+VSCode  https://code.visualstudio.com/
+Typora
+Node.JS https://nodejs.org/en
+
+三、 绑定github仓库创建SSH私钥
+打开Git Bash输入
+
+git config --global user.name &quot;你的Github用户名&quot;git config --global user.email &quot;你的邮箱&quot;
+
+创建SSH私钥
+
+$ ssh-keygen -t rsa -C &quot;2187988995@qq.com&quot;  ## 输入自己的邮箱Generatin ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/04/30/%E4%BA%91%E5%B4%BDQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%83%A8%E7%BD%B2%EF%BC%88Linux%EF%BC%89/" title="'云崽QQ机器人的部署（Linux）'"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Paimeng.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="'云崽QQ机器人的部署（Linux）'"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/%E4%BA%91%E5%B4%BDQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%83%A8%E7%BD%B2%EF%BC%88Linux%EF%BC%89/" title="'云崽QQ机器人的部署（Linux）'">'云崽QQ机器人的部署（Linux）'</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-30T06:37:54.000Z" title="发表于 2024-04-30 14:37:54">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/">QQ机器人</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/">QQ机器人</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/Ubuntu/">Ubuntu</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/YunZai/">YunZai</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/30/%E4%BA%91%E5%B4%BDQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%83%A8%E7%BD%B2%EF%BC%88Linux%EF%BC%89/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">云崽机器人脚本部署调用脚本在Linux终端命令行输入  等待系统安装完成
+subash &lt;(curl -sL https://gitee.com/baihu433/Yunzai-Bot-Shell/raw/master/install.sh)
+
+定义Api签名API接口地址Api签名使用小兔提供的API  单击API进入网页
+
+随便选择一个API地址 注意：选择的APi接口一定要先访问测试 如果不能访问的话就换一个
+
+
+定义API接口打开终端 完成以下步骤
+su //进入管理员账号vim /root/Miao-Yunzai/config/config/bot.yaml  //添加api接口 34 # 签名API地址(如:http://127.0.0.1:8080/sign?key=114514) 35 sign_api_addr: http://qsign.angryrabbit.cn/8978/sign?key=114514  //找到第35行 将复制下来的api接口地址填入  wq  //保存退出
+启动云崽服务器
+启动服务器 （如果没有下面这个界面 在命令行中输入bh进入）
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/04/30/Samba%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%9F%BA%E7%A1%80/" title="保姆级教学 Samba服务器的配置与管理"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/samba1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="保姆级教学 Samba服务器的配置与管理"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/Samba%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%9F%BA%E7%A1%80/" title="保姆级教学 Samba服务器的配置与管理">保姆级教学 Samba服务器的配置与管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-29T16:00:00.000Z" title="发表于 2024-04-30 00:00:00">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/Samba/">Samba</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/Samba/">Samba</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/30/Samba%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%9F%BA%E7%A1%80/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">在Linux中，大家听的最多的可能就是Samba服务，什么是Samba呢，Samba是连接Linux与Windows的桥梁，真是由于Samba的出现，我们才可以在Linux和Windows间互相通信。
+Samba服务器配置的工作流程在Samba服务安装完毕之后，并不是直接可以使用Windows或Linux的客户端访问Samba服务器，我们还必须对服务器进行设置：告诉Samba服务器将那些目录共享出来给客户端进行访问。
+**基本的Samba服务器搭建流程主要分为四个步骤**。
+（1）编辑主配置文件smb.conf，指定需要共享的目录，并未共享目录设置共享权限。
+（2）在smb.conf文件中指定日志文件名称和存放路径。
+（3）设置共享目录的本地系统权限
+（4）重新加载配置文件或重新启动SMB服务，使配置生效。
+Samba工作流程：
+1、客户端请求访问Samba服务器上的共项目录
+2、Samba服务器接收到请求后，会查询主配置文件smb.conf，看是否共享了share目录，如果共享了则查询客户端是否有权限访问。
+3、Samba服务器会把本次访问信息记录写在日志中，日志文件的名称和路径都需 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/04/30/%E5%9F%BA%E7%A1%80/" title="无题"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/background.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/%E5%9F%BA%E7%A1%80/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-29T16:00:00.000Z" title="发表于 2024-04-30 00:00:00">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/30/%E5%9F%BA%E7%A1%80/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/04/24/KVM%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="2023年网络建设与运维KVM创建虚拟机的全过程"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ChinaSkills.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2023年网络建设与运维KVM创建虚拟机的全过程"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/24/KVM%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="2023年网络建设与运维KVM创建虚拟机的全过程">2023年网络建设与运维KVM创建虚拟机的全过程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-24T03:22:53.000Z" title="发表于 2024-04-24 11:22:53">2024-04-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/KVM/">KVM</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/KVM/">KVM</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/24/KVM%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E6%9C%BA/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">KVMRocky创建KVM虚拟机的全过程编辑网卡信息配置本地IP
+编辑网卡配置文件
+
+vim &#x27;网卡配置文件&#x27;[ethernet]method=manualaddress1=10.4.220.100/24,10.4.220.1 
+
+在Ubuntu上测试连通性
+
+root@WaitAyaka:/home/waitayaka/桌面# ping 10.4.220.100PING 10.4.220.100 (10.4.220.100) 56(84) bytes of data.64 bytes from 10.4.220.100: icmp_seq=1 ttl=63 time=1.66 ms64 bytes from 10.4.220.100: icmp_seq=2 ttl=63 time=1.66 ms64 bytes from 10.4.220.100: icmp_seq=3 ttl=63 time=1.62 ms64 bytes from 10.4.220.100: icmp_seq=4 ttl=63 time=1.68 ms64 bytes from 10.4.22 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/04/16/FTP%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="FTP服务器的配置与管理"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ftp.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="FTP服务器的配置与管理"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/16/FTP%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="FTP服务器的配置与管理">FTP服务器的配置与管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-16T09:00:30.000Z" title="发表于 2024-04-16 17:00:30">2024-04-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/FTP/">FTP</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/FTP/">FTP</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/16/FTP%E6%9C%8D%E5%8A%A1%E5%99%A8/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">@TOC
+FTP简介文件传输协议FTP（File Transfer FTP）作为网络共享文件的传输协议，在网络应用软件中具有广泛的应用。
+ FTP协议
+FTP是TCP/IP的协议簇协议之一，其主要功能是借助网络实现远距离主机间的文件传输。
+1.使用Vsftpd服务器Vsftpd （Very Secure FTP）是linux系统的常用软件。
+1.1 Vsftpd的服务器的安装与启动Vsftpd在yum源中的名称就是叫做vsftpd
+yum install -y vsftpd*  //*代表下载所有关于vsftpd的软件包
+1.2 Vsftpd服务器的用户类型Vsftpd的用户类型主要分为匿名用户、本地用户和虚拟用户。
+（1）匿名用户：如果Vsftpd服务器提供匿名访问功能，默认的匿名访问用户为anonymous或ftp，密码为空，匿名用户登录后进入到工作目录是/var/ftp
+（2）本地用户：本地用户信息存储在/etc/passwd文件中，本地用户输入用户名和密码后可登录vsftpd，并且直接进入该用户的宿主目录。
+（3）虚拟用户：旨在vsftpd服务器中拥有账号，并且该账号只能用于文 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/04/16/Ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/" title="Ansible自动化运维服务器的部署"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ansible.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ansible自动化运维服务器的部署"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/16/Ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/" title="Ansible自动化运维服务器的部署">Ansible自动化运维服务器的部署</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-16T08:40:16.000Z" title="发表于 2024-04-16 16:40:16">2024-04-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/Categories/Ansible/">Ansible</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/Tags/Linux/">Linux</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/">网络建设与运维</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/Tags/Ansible/">Ansible</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2024/04/16/Ansible%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">Ansible自动化运维人工运维时代运维人员早期需要维护数量众多的机器，因此需要执行反复，重复的劳动力。很多机器需要部署相同的服务或是执行相同的命令，还得反复的登录不同的机器。
+自动化运维时代早期运维人员会结合ssh免密登录和shell脚本来完成自动化的部署操作。
+系统管理员早期面临的问题主要是，配置管理系统，远程执行命令，批量安装服务，启停服务等。
+后来也就诞生了众多开源的软件，自动化运维软件。
+
+fabric
+puppet
+saltstack
+chef
+Ansible  
+
+自动化运维趋势人肉运维 &gt; 人力运维 &gt; 自动化运维 &gt; 数据化运维 &gt; 可视化运维 &gt; AI智能运维
+自动化运维的好处
+提高工作效率吧 减少重复性的劳动新操作
+大大的减少了人为出错的可能性
+ansible支持数据化管理，数据化追源，找到问题的源点
+
+
+ansible介绍ansible是一个同时管理多个远程主机的软件，必须是任意可以同股票ssh登录的机器
+
+远程虚拟机
+物理机
+也可以直接管理本地机器
+
+ansible通过ssh协议实现了，管理节点（老板），被管理节点（员工）的通信。 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">WaitAyaka</div><div class="author-info__description">我的荣幸</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/Tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/Categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://blog.csdn.net/2201_75288693?spm=1000.2115.3001.5343"><i></i><span>前往我的CSDN</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://space.bilibili.com/390642502?spm_id_from=333.1007.0.0" target="_blank" title=""><i class="fab fa-bilibili"></i></a><a class="social-icon" href="https://v.douyin.com/iYqN815X/" target="_blank" title=""><i class="fab fa-tiktok"></i></a><a class="social-icon" href="https://qm.qq.com/q/KEhRmXufya" target="_blank" title=""><i class="fab fa-qq"></i></a><a class="social-icon" href="https://github.com/WaitAyaka/waitayaka.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2187988995@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎大家来到我的博客 我是网络建设与运维赛项的一位选手 想一起交流的话可以加我的联系方式 "QQ：2187988995 VX：WaitAyaka" 除此之外有其他事情也可以咨询我！！！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/05/14/2022%E5%B9%B4%E4%B8%AD%E8%81%8C%E7%BB%84%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E9%99%A2%E6%A0%A1%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%B5%9B%E9%A1%B9%EF%BC%88%E4%BA%A4%E6%8D%A2%E8%A7%A3%E6%B3%95%EF%BC%89/" title="2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/1297318.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）"/></a><div class="content"><a class="title" href="/2024/05/14/2022%E5%B9%B4%E4%B8%AD%E8%81%8C%E7%BB%84%E5%85%A8%E5%9B%BD%E8%81%8C%E4%B8%9A%E9%99%A2%E6%A0%A1%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E4%B8%8E%E5%BA%94%E7%94%A8%E8%B5%9B%E9%A1%B9%EF%BC%88%E4%BA%A4%E6%8D%A2%E8%A7%A3%E6%B3%95%EF%BC%89/" title="2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）">2022年中职组全国职业院校技能大赛网络搭建与应用赛项（交换解法）</a><time datetime="2024-05-14T04:54:22.000Z" title="发表于 2024-05-14 12:54:22">2024-05-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/30/Docker%E6%95%99%E7%A8%8B/" title="Docker教程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/docker.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker教程"/></a><div class="content"><a class="title" href="/2024/04/30/Docker%E6%95%99%E7%A8%8B/" title="Docker教程">Docker教程</a><time datetime="2024-04-30T06:48:51.000Z" title="发表于 2024-04-30 14:48:51">2024-04-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/30/Postfix-Dovecot%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%B7%E9%A2%98/" title="Postfix&amp;Dovecot邮件服务器样题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ChinaSkills.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Postfix&amp;Dovecot邮件服务器样题"/></a><div class="content"><a class="title" href="/2024/04/30/Postfix-Dovecot%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%B7%E9%A2%98/" title="Postfix&amp;Dovecot邮件服务器样题">Postfix&amp;Dovecot邮件服务器样题</a><time datetime="2024-04-30T06:42:44.000Z" title="发表于 2024-04-30 14:42:44">2024-04-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/30/Github/" title="Hexo搭建博客 Github"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/hexo.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo搭建博客 Github"/></a><div class="content"><a class="title" href="/2024/04/30/Github/" title="Hexo搭建博客 Github">Hexo搭建博客 Github</a><time datetime="2024-04-30T06:41:37.000Z" title="发表于 2024-04-30 14:41:37">2024-04-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/30/%E4%BA%91%E5%B4%BDQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%83%A8%E7%BD%B2%EF%BC%88Linux%EF%BC%89/" title="'云崽QQ机器人的部署（Linux）'"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Paimeng.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="'云崽QQ机器人的部署（Linux）'"/></a><div class="content"><a class="title" href="/2024/04/30/%E4%BA%91%E5%B4%BDQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%83%A8%E7%BD%B2%EF%BC%88Linux%EF%BC%89/" title="'云崽QQ机器人的部署（Linux）'">'云崽QQ机器人的部署（Linux）'</a><time datetime="2024-04-30T06:37:54.000Z" title="发表于 2024-04-30 14:37:54">2024-04-30</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/Ansible/"><span class="card-category-list-name">Ansible</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/Docker/"><span class="card-category-list-name">Docker</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/FTP/"><span class="card-category-list-name">FTP</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/KVM/"><span class="card-category-list-name">KVM</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/"><span class="card-category-list-name">QQ机器人</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/Samba/"><span class="card-category-list-name">Samba</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Categories/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/"><span class="card-category-list-name">网络建设与运维</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/Tags/Ansible/" style="font-size: 1.1em; color: #999">Ansible</a> <a href="/Tags/Docker/" style="font-size: 1.1em; color: #999">Docker</a> <a href="/Tags/FTP/" style="font-size: 1.1em; color: #999">FTP</a> <a href="/Tags/Github/" style="font-size: 1.1em; color: #999">Github</a> <a href="/Tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a> <a href="/Tags/KVM/" style="font-size: 1.1em; color: #999">KVM</a> <a href="/Tags/Kubernetes/" style="font-size: 1.1em; color: #999">Kubernetes</a> <a href="/Tags/Linux/" style="font-size: 1.5em; color: #99a9bf">Linux</a> <a href="/Tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" style="font-size: 1.1em; color: #999">QQ机器人</a> <a href="/Tags/Samba/" style="font-size: 1.1em; color: #999">Samba</a> <a href="/Tags/Ubuntu/" style="font-size: 1.1em; color: #999">Ubuntu</a> <a href="/Tags/YunZai/" style="font-size: 1.1em; color: #999">YunZai</a> <a href="/Tags/postfix/" style="font-size: 1.1em; color: #999">postfix</a> <a href="/Tags/%E7%BD%91%E7%BB%9C%E5%BB%BA%E8%AE%BE%E4%B8%8E%E8%BF%90%E7%BB%B4/" style="font-size: 1.5em; color: #99a9bf">网络建设与运维</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><span class="card-archive-list-count">9</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">31.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-05-14T04:56:42.829Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By WaitAyaka</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => { 
+  const getCommentUrl = () => {
+    const eleGroup = document.querySelectorAll('#recent-posts .article-title')
+    let urlArray = []
+    eleGroup.forEach(i=>{
+      urlArray.push(i.getAttribute('href'))
+    })
+    return urlArray
+  }
+
+  const getCount = () => {
+    const runTwikoo = () => {
+      twikoo.getCommentsCount({
+        envId: 'https://twikoo.twikoo.waitayaka.top/',
+        region: '',
+        urls: getCommentUrl(),
+        includeReply: false
+      }).then(function (res) {
+        document.querySelectorAll('#recent-posts .twikoo-count').forEach((item,index) => {
+          item.innerText = res[index].count
+        })
+      }).catch(function (err) {
+        console.log(err)
+      })
+    }
+
+      if (typeof twikoo === 'object') {
+        runTwikoo()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runTwikoo)
+      }
+  }
+
+  window.pjax ? getCount() : window.addEventListener('load', getCount)
+
+})()</script><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["在抵达安宁之前加油吧!"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '在抵达安宁之前加油吧!'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script></div><script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
